@@ -1,0 +1,28 @@
+<div>
+    <h3>{{mode}}</h3>
+    <form (ngSubmit)="onSubmit()" [formGroup]="courseForm">
+        <mat-form-field >
+            <input matInput placeholder="Course Number" id="courseNumber" formControlName="courseNumber" name="courseNumber">
+        </mat-form-field>
+
+        <mat-form-field >
+            <input matInput placeholder="Course Title" id="courseTitle" formControlName="courseTitle" name="courseTitle" >
+        </mat-form-field>
+    
+        <mat-form-field >
+            <input matInput placeholder="Instructor" id="instructor" formControlName="instructor" name="instructor" >
+        </mat-form-field>
+
+        <mat-form-field >
+            <input matInput placeholder="Semester" id="semester" formControlName="semester" name="semester" >
+        </mat-form-field>
+    
+        <mat-form-field >
+            <input matInput placeholder="Campus" id="campus" formControlName="campus" name="campus" >
+        </mat-form-field>
+    
+        <p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </p>
+    </form>
+</div>

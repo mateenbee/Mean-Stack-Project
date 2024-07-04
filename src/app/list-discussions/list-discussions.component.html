@@ -1,0 +1,8 @@
+<div>
+    <ul *ngFor ="let discussion of discussions let i = index">
+        <li> {{discussion._id}}: {{discussion.discussionNumber}} {{discussion.discussionTitle}} {{discussion.instructor}} {{discussion.topic}} (index {{i}})
+            <button mat-button color="warn" (click)="onDelete(discussion._id)">DELETE</button>
+            <button mat-button color="accent" [routerLink]="['/editDiscussion', discussion._id]">UPDATE</button>
+        </li>
+    </ul>
+  </div>

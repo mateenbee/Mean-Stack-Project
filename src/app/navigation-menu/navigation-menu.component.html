@@ -1,0 +1,22 @@
+<button mat-button [matMenuTriggerFor]="menu" class="custom-menu-button">
+  Menu
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/listCourses" class="bold-menu-item">
+    List Courses
+  </button>
+  <button mat-menu-item routerLink="/addCourse" class="bold-menu-item">
+    Add Courses
+  </button>
+  <button mat-menu-item routerLink="/listDiscussions" class="bold-menu-item">
+    List Discussions
+  </button>
+  <button mat-menu-item routerLink="/addDiscussion" class="bold-menu-item">
+    Add Discussions
+  </button>
+  <button mat-menu-item routerLink="/listAnnouncements" class="bold-menu-item">List Announcements</button>
+  <button mat-menu-item routerLink="/addAnnouncement" class="bold-menu-item"> Add Announcement</button>
+    <button mat-menu-item routerLink="/listAssignments">List Assignments</button>
+  <button mat-menu-item routerLink="/addAssignments">Add Assignments</button>
+  <button mat-menu-item routerLink="/uploadVideo">Upload Video</button>
+</mat-menu>

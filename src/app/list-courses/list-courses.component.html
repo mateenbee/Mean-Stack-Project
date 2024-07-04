@@ -1,0 +1,8 @@
+<div>
+  <ul *ngFor ="let course of courses let i = index">
+      <li> {{course._id}}: {{course.courseNumber}} {{course.courseTitle}} {{course.instructor}} {{course.semester}} {{course.campus}} (index {{i}})
+          <button mat-button color="warn" (click)="onDelete(course._id)">DELETE</button>
+          <button mat-button color="accent" [routerLink]="['/editCourse', course._id]">UPDATE</button>
+      </li>
+  </ul>
+</div>

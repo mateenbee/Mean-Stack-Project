@@ -1,0 +1,24 @@
+<div>
+    <h3>{{mode}}</h3>
+    <form (ngSubmit)="onSubmit()" [formGroup]="discussionForm">
+        <mat-form-field >
+            <input matInput placeholder="Discussion Number" id="discussionNumber" formControlName="discussionNumber" name="discussionNumber">
+        </mat-form-field>
+
+        <mat-form-field >
+            <input matInput placeholder="Discussion Title" id="discussionTitle" formControlName="discussionTitle" name="discussionTitle" >
+        </mat-form-field>
+    
+        <mat-form-field >
+            <input matInput placeholder="Instructor" id="instructor" formControlName="instructor" name="instructor" >
+        </mat-form-field>
+
+        <mat-form-field >
+            <input matInput placeholder="Topic" id="topic" formControlName="topic" name="topic" >
+        </mat-form-field>
+    
+        <p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </p>
+    </form>
+</div>

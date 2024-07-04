@@ -1,0 +1,26 @@
+<div>
+  <h2>Assignments</h2>
+  <ul *ngFor="let assignment of assignments; let i = index">
+    <li>
+      <strong>ID:</strong> {{ assignment._id }}
+      <br />
+      <strong>Assignment:</strong> {{ assignment.assignmentName }}
+      <br />
+      <strong>Due Date:</strong> {{ assignment.dueDate | date : "shortDate" }}
+      <br />
+      <strong>Grade:</strong> {{ assignment.grade || "Not graded" }} (index
+      {{ i }})
+      <br />
+      <button mat-button color="warn" (click)="onDelete(assignment._id)">
+        DELETE
+      </button>
+      <button
+        mat-button
+        color="accent"
+        [routerLink]="['/editAssignment', assignment._id]"
+      >
+        UPDATE
+      </button>
+    </li>
+  </ul>
+</div>

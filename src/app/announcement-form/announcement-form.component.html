@@ -1,0 +1,20 @@
+<div>
+    <h3>{{mode}}</h3>
+    <form (ngSubmit)="onSubmit()" [formGroup]="announcementForm">
+        <mat-form-field >
+            <input matInput placeholder="Announcement Title" id="announcementTitle" formControlName="announcementTitle" name="announcementTitle">
+        </mat-form-field>
+ 
+        <mat-form-field >
+            <input matInput placeholder="Announcement Topic" id="announcementTopic" formControlName="announcementTopic" name="announcementTopic" >
+        </mat-form-field>
+   
+        <mat-form-field >
+            <input matInput placeholder="Announcement Date" id="announcementDate" formControlName="announcementDate" name="announcementDate" >
+        </mat-form-field>
+   
+        <p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </p>
+    </form>
+</div>

@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1 {
+  font-size: 50px !important;
+  text-align: center;
+  color: #2e0de6;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #274775;
+}
+.team-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.team-info h2 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.container {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+.custom-menu-button {
+  font-size: 30px !important;
+  background-color: #69db34;
+  color: #db1d9c;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: none;
+  border-radius: 5px;
+}
+
+.custom-menu-button:hover {
+  background-color: #b929a6;
+}
+
+form {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(155, 58, 58, 0.1);
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 30%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-banner {
+  background-image: url("https://web.aacei.org/images/default-source/Professional-Technical-Resources/publications/virtual-library-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-group button {
+  background-color: #5cb85c;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+nav {
+  background-color: #007bff;
+  overflow: hidden;
+  padding: 14px 20px;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #0056b3;
+  color: #333;
+}

@@ -1,0 +1,22 @@
+<div>
+  <h3>{{ mode }} New Assignment Form</h3>
+  <form [formGroup]="assignmentForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Assignment Name"
+        formControlName="assignmentName"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Due Date" formControlName="dueDate" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Grade" formControlName="grade" />
+    </mat-form-field>
+    <p>
+      <button type="submit" mat-raised-button color="primary">Submit</button>
+    </p>
+  </form>
+</div>

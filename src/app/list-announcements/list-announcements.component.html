@@ -1,0 +1,8 @@
+<div>
+    <ul *ngFor ="let announcement of announcements let i = index">
+        <li> {{announcement._id}}: {{announcement.announcementTitle}} {{announcement.announcementTopic}} {{announcement.announcementDate}} (index {{i}})
+            <button mat-button color="warn" (click)="onDelete(announcement._id)">DELETE</button>
+            <button mat-button color="accent" [routerLink]="['/editAnnouncement', announcement._id]">UPDATE</button>
+        </li>
+    </ul>
+  </div>
